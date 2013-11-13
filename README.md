@@ -1,4 +1,4 @@
-# cldict
+# cldict [![Build Status](https://travis-ci.org/zhuzhuor/cldict.png?branch=master)](https://travis-ci.org/zhuzhuor/cldict)
 
 A command-line English-Chinese dictionary
 
