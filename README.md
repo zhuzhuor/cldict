@@ -23,6 +23,11 @@ For example, to look up `take`:
     n. 拿取；取得物
     形容词：takable   过去式：took   过去分词：taken   现在分词：taking   第三人称单数：takes
 
+## Data
+
+The data of this command-line tool is retrieved from the online resource of http://dict.cn
+
+
 ## License
 
 MIT

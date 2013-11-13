@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='cldict',
-    version='0.1',
+    version='0.1.1',
     description='Command-line English-Chinese Dictionary',
     author='Bo Zhu',
     url='https://github.com/zhuzhuor/cldict/',
-    packages=['cldict'],
+    packages=find_packages(),
     license='MIT',
     entry_points={
         'console_scripts': [
@@ -19,5 +19,6 @@ setup(
         'beautifulsoup4',
         'bisheng',
         'requests'
-    ]
+    ],
+    test_suite='tests'
 )
