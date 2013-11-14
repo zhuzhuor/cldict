@@ -6,7 +6,7 @@ A command-line English-Chinese dictionary
 
     pip install cldict
 
-Or download the source code and install mannually:
+Or download the source code and install manually:
 
     python setup.py install
 
