@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='cldict',
-    version='0.1.1',
+    version='0.1.2',
     description='Command-line English-Chinese Dictionary',
     author='Bo Zhu',
     url='https://github.com/zhuzhuor/cldict/',

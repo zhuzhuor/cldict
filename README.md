@@ -12,7 +12,7 @@ Or download the source code and install mannually:
 
 ## Usage
 
-    cldict WORD
+    cldict PHRASE
 
 For example, to look up `take`:
 
@@ -22,6 +22,13 @@ For example, to look up `take`:
     v. 拿；取；执行；需要；接受；理解；修 (课程)；花费；吃（喝）；认为；搭乘
     n. 拿取；取得物
     形容词：takable   过去式：took   过去分词：taken   现在分词：taking   第三人称单数：takes
+
+Or to look up `good morning`:
+
+    cldict good morning
+
+    good morning
+    早上好
 
 ## Data
 

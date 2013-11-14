@@ -9,22 +9,29 @@ from bisheng import add_spaces
 def main_func():
     if len(sys.argv) < 2:
         if '.py' in sys.argv[0]:
-            print 'Usage: python %s WORD' % sys.argv[0]
+            print 'Usage: python %s PHRASE' % sys.argv[0]
         else:
-            print 'Usage: cldict WORD'
-        print 'Look up the WORD from online dictionary'
+            print 'Usage: cldict PHRASE'
+        print 'Look up the PHRASE from online dictionary'
         return
 
-    word = sys.argv[1]
-    info = look_up(word)
+    phrase = ' '.join(sys.argv[1:])
+    info = look_up(phrase)
 
-    print info['word'],
+    if not info or ('phrase' in info and not info['phrase']):
+        print 'No result found.'
+        return
+
+    if 'phrase' in info:
+        print info['phrase'],
     if 'phonetic' in info:
         print info['phonetic']
     else:
         print
+
     if 'explanation' in info:
         print add_spaces(info['explanation'])
+
     if 'transform' in info:
         print add_spaces(info['transform'])
 
